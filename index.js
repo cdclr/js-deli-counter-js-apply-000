@@ -1,8 +1,8 @@
 var katzDeli = [];
-function takeANumber(katzDeliLine, name) {
+function takeANumber(katzDeliLine) {
   //assuming this function is for adding people to the queue, not finding the location of a person already in the queue
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+  katzDeliLine.push(katzDeliLine.length);
+  return `You are number ${katzDeliLine.length} in line.`;
 }
 function nowServing(katzDeliLine) {
   //0 is untruthy, so I can avoid using ".length === 0"; not sure if I should use it anyway to make my code more readable, though?
